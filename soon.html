@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #050505;
+            font-family: 'Courier New', monospace;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+
+            /* Neon glow */
+            text-shadow: 
+                0 0 5px #ff0000,
+                0 0 10px #ff0000,
+                0 0 20px #ff1a1a,
+                0 0 40px #ff1a1a;
+
+            overflow: hidden;
+            border-right: 3px solid #ff0000;
+            white-space: nowrap;
+
+            /* Typing animation */
+            width: 0;
+            animation: typing 3s steps(12, end) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 12ch; } /* number of characters */
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Coming Soon</h1>
+    
+
+</body>
+</html>
